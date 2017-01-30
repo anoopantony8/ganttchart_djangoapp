@@ -1,0 +1,23 @@
+<html ng-app="phonecatApp">
+<head>
+  <script src="static/chart/bower_components/angular/angular.js"></script>
+    <script src="static/chart/bower_components/moment/moment.js"></script>
+<script src="static/chart/bower_components/angular-moment/angular-moment.js"></script>
+  <link rel="stylesheet" href="static/chart/bower_components/angular-gantt/assets/angular-gantt.css"/>
+    <link rel="stylesheet" href="static/chart/bower_components/angular-gantt/assets/angular-gantt-plugins.css"/>
+  <script src="static/chart/app.js"></script>
+</head>
+<body ng-controller="PhoneListController">
+<div gantt data=data>
+  <gantt-table></gantt-table>
+  <gantt-movable></gantt-movable>
+  <gantt-tooltips></gantt-tooltips>
+    <gantt-draw-task enabled="true"
+                   task-factory="drawTaskFactory">
+    </gantt-draw-task>
+</div>
+
+<script src="static/chart/bower_components/angular-gantt/assets/angular-gantt.js"></script>
+<script src="static/chart/bower_components/angular-gantt/assets/angular-gantt-plugins.js"></script>
+</body>
+</html>
